@@ -5,7 +5,7 @@ Preguntas de reflexión:
    reglas de las entidades de forma aislada sin depender de ninguna base de datos externa
    
 2. El Service recibe el repositorio como Repository<Prestamo>, no InMemoryPrestamoRepository. ¿Qué se rompía si usaban la clase concreta?
-   rompería uno de los principios solid  que es la D de inversión de decencias que lo que dice es que los módulos de alto nivel que en este caso seria el servicio que este no debe de depender de módulos de bajo nivel que en mi caso seria la implementación en la memoria si no que deberia depender de abstracciones,
+   rompería uno de los principios solid  que es la D de inversión de dependencias que lo que dice es que los módulos de alto nivel que en este caso seria el servicio que este no debe de depender de módulos de bajo nivel que en mi caso seria la implementación en la memoria si no que deberia depender de abstracciones,
    al depender de una clase en concreta crearía un fuerte acoplamiento 
   
    
