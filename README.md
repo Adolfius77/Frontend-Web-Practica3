@@ -12,3 +12,5 @@ Preguntas de reflexión:
 4. Si cambiaran el Map en memoria por una base de datos real, ¿cuántos archivos tocarían? ¿Por qué tan pocos?
   pues solo tendriamos que hacer dos cosas primero crear una clase concreta para interactuar con la base de datos que puede ser mongo, mysql , etc , la cual debe implementar la interfaz original que es prestamo.repository.ts
   segundo solo tendríamos que cambiar la instancia en el main.ts y inyectar el nuevo servicio
+
+  Y por que son tan pocos cambios se preguntaría eso es gracias a la interfaz, el service y las entidades ignoran los detalles técnicos de la bd, ya el resto de la app o sistema no se va a enterar cuando se cambie de bd
